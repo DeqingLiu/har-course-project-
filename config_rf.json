@@ -1,0 +1,8 @@
+{
+  "protocol": "Supplementary comparison after initial A-D test results were inspected; no new test-guided tuning",
+  "seeds": [42, 43, 44],
+  "fixed": {"n_estimators": 300, "criterion": "gini", "max_features": "sqrt", "bootstrap": true, "class_weight": null, "n_jobs": 4},
+  "candidate_order": [{"max_depth": 12, "min_samples_leaf": 3}, {"max_depth": 12, "min_samples_leaf": 1}, {"max_depth": null, "min_samples_leaf": 3}, {"max_depth": null, "min_samples_leaf": 1}],
+  "selection": "Highest mean validation Macro-F1 over all three seeds; ties keep first candidate",
+  "experiments": {"E": 3, "F": 6}
+}

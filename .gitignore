@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.venv/
+data/raw/*.zip
+data/processed/*.npz
+tmp/
+*.partial
+outputs/runs/*/model.pt
+outputs/runs/*/model.joblib
+outputs/expanded/runs/*/model.joblib
+dist/

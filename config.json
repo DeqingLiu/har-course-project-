@@ -1,0 +1,10 @@
+{
+  "dataset_url": "https://archive.ics.uci.edu/static/public/240/human%2Bactivity%2Brecognition%2Busing%2Bsmartphones.zip",
+  "split_seed": 42,
+  "validation_subjects": 4,
+  "seeds": [42, 43, 44],
+  "channels": ["total_acc_x", "total_acc_y", "total_acc_z", "body_gyro_x", "body_gyro_y", "body_gyro_z"],
+  "lr_C_candidates": [0.1, 1.0, 10.0],
+  "cnn": {"widths": [64, 128, 128], "kernels": [7, 5, 3], "dropout": 0.3, "learning_rate": 0.001, "batch_size": 64, "max_epochs": 60, "patience": 10},
+  "identity": {"name": "待填写", "student_id": "待填写", "github": "未公开发布，代码随本地项目提供"}
+}
