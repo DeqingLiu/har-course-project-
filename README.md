@@ -10,9 +10,9 @@ GitHub 仓库提供源码、复现说明、正式 PDF，以及 `published_result
 
 - `submission/课程设计报告.pdf`：新版六页正式报告。
 - `submission/2026439081-雷煜.pdf`：内容相同的提交命名版本。
-- `submission/archive/课程设计报告_四组实验原版.pdf`：保留的原版。
+- `submission/archive/课程设计报告_四组实验原版.pdf`：原版仅保留在本地完整材料包。
 - `中文讲解与复现.md`：方法解释、负面结果和答辩要点。
-- `outputs/expanded/summary.csv`：六组结果；数值为 0 到 1 的比例。
+- `published_results/summary.csv`：GitHub 中的六组结果摘要；本地完整证据位于 `outputs/expanded/`。
 - `验收记录.md`：模型、指标、排版和打包核验记录。
 
 ## 实际测试结果
@@ -37,7 +37,7 @@ cd D:\数据挖掘\har-course-project
 & 'D:/Huawei Cup/.venv/Scripts/python.exe' har_rf.py validate
 ```
 
-该命令检查原始与新增冻结清单、相同受试者划分、四配置的验证均值选优，重新加载全部十四个模型并复核预测。本次通过 76 项检查。
+该命令需要本地完整材料包或已完成训练的目录；它检查原始与新增冻结清单、相同受试者划分、四配置的验证均值选优，重新加载全部十四个模型并复核预测。本次通过 76 项检查。
 
 完整扩充入口如下。已有冻结权重和结果时，跳过训练、首次评价，重新核验模型并生成图表及训练/验证/测试对照：
 
